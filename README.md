@@ -25,6 +25,11 @@ To use the .py:
 6. Leave the window open and it will do its thing 10 minutes before the scheduled start time each day they show MSI.
 7. If your MSI link is not "https://lolesports.com/live/msi/riotgames" I recommend using a browser extension that can automatically redirect you from "https://lolesports.com/live/msi/riotgames" to your MSI viewing link.
 
+Alternative to using the .py:
+1. Copy the code below and paste it in your preferred IDE.
+2. Save it as a .py however you like.
+3. Run it however you like.
+
 Python code that is run:
 ```
 import webbrowser
