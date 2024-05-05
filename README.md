@@ -4,8 +4,26 @@ I couldn't get the tab scheduler chrome extension to work so this is what I came
 I made it into an exe file with "pyinstaller --onefile watch_msi.py" in command line in the python directory.  The .py file is in there if you have a python environment and prefer to run it that way.
 All it does is open and run the python code down below.  I have it open the MSI website a minute after you launch it so you know if it works.  It opens a black python box and you just minimize that and it runs in the background.
 The watch_msi.exe file is in the dist folder inside the main Watch MSI folder.  The actual code is in watch_msi.py in the main Watch MSI folder if you'd rather run the python code directly.
-You may have to whitelist it with your antivirus.
 
+Obligatory disclaimer: Use at your own risk.  I don't think there is any risk but if there is that I'm not aware of, I don't aim to be held responsible for it.
+Your antivirus will probably have a freakout about unknown .exe's when you try to run this so you may need to whitelist it.
+
+To use the .exe: 
+1. Unzip the downloaded zip.
+2. Navigate to the \Watch MSI\dist folder.
+3. Double click watch_msi.exe
+4. After 1 minute, it will test launch "https://lolesports.com/live/msi/riotgames".
+5. Leave the window open and it will do its thing 10 minutes before the scheduled start time each day they show MSI.
+6. If your MSI link is not "https://lolesports.com/live/msi/riotgames" I recommend using a browser extension that can automatically redirect you from "https://lolesports.com/live/msi/riotgames" to your MSI viewing link.
+
+To use the .py:
+1. Unzip the downloaded zip.
+2. Navigate to the \Watch MSI folder.
+3. Copy watch_msi.py to whatever folder you want to run .py files from.
+4. Run the watch_msi.py however you want.
+5. After 1 minute, it will test launch "https://lolesports.com/live/msi/riotgames"
+6. Leave the window open and it will do its thing 10 minutes before the scheduled start time each day they show MSI.
+7. If your MSI link is not "https://lolesports.com/live/msi/riotgames" I recommend using a browser extension that can automatically redirect you from "https://lolesports.com/live/msi/riotgames" to your MSI viewing link.
 
 Python code that is run:
 ```
