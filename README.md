@@ -76,7 +76,7 @@ print('Scheduler initialized with UTC timezone')
 # Schedule opening the website at each specific UTC time
 for time_utc in specific_times_utc:
     if time_utc > launch_utc_time:
-        scheduler.add_job(open_website, 'date', run_date=time_utc, args=[url])
+        scheduler.add_job(open_website, 'date', run_date=time_utc, args=[url], misfire_grace_time=60)
 
 
 # Print the job schedule    
@@ -94,7 +94,7 @@ print(f"Test job scheduled to open {url} in 1 minute at {test_time_utc} UTC")
 try:
     import time
     while True:
-        time.sleep(1)
+        time.sleep(0.5)
 except (KeyboardInterrupt, SystemExit):
     scheduler.shutdown()
 ```
